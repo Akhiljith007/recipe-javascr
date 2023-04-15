@@ -1,0 +1,343 @@
+body{margin: 0;
+border: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;}
+
+.navbar{font-family: 'Anton', sans-serif;}
+
+#searchRecipe{width: 300px;}
+
+
+#navImage{width: 50px;}
+
+article{display: flex;
+justify-content: space-around;
+width: 100%;
+animation: expand 2.60s ease-out;
+align-items: center;}
+
+.articleMobile{display: flex;
+    justify-content: space-around;
+    width: 100%;
+ 
+    align-items: center;}
+
+ .scroll-images{animation: expand 1.20s ease-out;}
+
+@keyframes expand{
+    from{
+        width: 0%;
+    }
+    to{width: 100%;}
+}
+
+
+#comment1{display: flex;}
+#comment{
+    background-color: azure;
+    border: 1px solid azure ;
+width: 140px;
+position: relative;
+left: 900px;
+top: -400px;}
+
+
+
+#section2{display: flex;
+justify-content: space-between;
+align-items: center;}
+#menuButton1{border-radius: 50px;
+width: 80px;
+border: 1px solid orange;
+color: orange;
+font-family:'Anton', sans-serif; }
+
+#menuButton1:hover{background-color: orange;
+color: black;}
+
+.main-scroll-div{width: 90%;
+height: 50%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.cover{
+width: 90%;
+height: 50%;}
+
+.scroll-images{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+overflow: auto;
+
+scroll-behavior: smooth;
+}
+
+.circle{width: 50px;
+height: 50px;
+border-radius: 50px;
+background-color: aquamarine;}
+
+.scroll-images::-webkit-scrollbar{
+   color: transparent;
+}
+.child{min-width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+height: 450px;
+margin: 1px 10px;
+
+
+cursor: pointer;
+border: 1px solid white;
+overflow: hidden;}
+
+
+
+.child-img{width: 40%;
+height: 100%;}
+
+.icon{border: none;
+font-weight: bold;
+font-size: 20px;
+background-color: transparent;
+cursor: pointer;
+color: orange;}
+.icon:hover{color: black;}
+
+#popular-menu{background-color: rgb(225, 166, 17);
+border-radius: 50px;
+width: 250px;
+padding: 5px;
+text-align: center;
+box-sizing: border-box;}
+
+#mobile{
+    padding-top: 10px;
+    width: 20%;
+    height: 400px;
+    border-radius: 30px;
+    border: 5px solid black;
+    padding: 5px;
+}
+
+#background2{background-color: orange;
+width: 300px;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 300px;
+border-radius: 100%;}
+
+#mobile{width: 70%;
+   
+background-color: white;}
+
+#navImage-micro{width: 40px;}
+
+#section3{display: flex;
+justify-content: space-evenly;
+align-items: center;}
+
+.optionsImg{width: 120px;
+border-radius: 50px;
+}
+#optionalImg{
+    display: grid;
+grid-template-columns: repeat(5,1fr);}
+
+#footer{box-sizing: border-box;
+    
+    display: flex;
+justify-content:space-between;
+}
+.underline{text-decoration: none;
+color: black;
+font-weight: bold;}
+
+
+#input{
+    padding: 15px;
+    background-color: rgb(229, 255, 255);
+    box-sizing: border-box;
+    box-shadow: 2px,2px;
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+box-shadow:(10px,10px);
+
+border-radius: 30px;
+line-height: 5px;
+}
+
+
+#navImage-micr{width: 80px;
+}
+
+#bgORANGE{width: 400px;
+    height: 420px;
+    
+    background-color: orange;
+    border-radius: 50%;}
+
+#imageINSIDE{width: 600px;
+    height: 419px;
+   
+}
+#fishFry{width:90px ;}
+#A{font-size: 70px;}
+#spaceDiv{height: 200px;}
+#finalEmail{width: 250px;}
+#iconDesigner:hover{background-color: coral;
+border-radius: 50px;}
+
+#section2{
+    width: 100%;
+    animation: expand 2.20s ease-out;
+}
+
+#minimobileSerach{box-sizing: border-box;
+overflow-x: hidden;}
+
+#footerabout:hover{ color: red;
+cursor: pointer;}
+#mainheadscroll:hover{color: red;}
+#meaasage{width: 100%;
+    float:right;}
+
+    #articleHead{font-size: 60px;}
+
+
+    /* media */
+
+  @media(max-width:1000px){
+    #articleHead{font-size:30px;}
+
+    #articleImg{width: 300px;}
+    #section2{display: flex;
+    flex-direction: column;}
+
+    #menuButton1{text-align: center;}
+    #section3{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #section-3Second{
+        margin-top: 100px;
+    }
+    #spaceDiv {
+        height: 100px;
+    }
+  }
+@media(max-width:800px){
+
+    #bgORANGE{width: 200px;
+        height: 220px;
+        
+        background-color: orange;
+        border-radius: 50%;}
+    
+    #imageINSIDE{width: 300px;
+        height: 219px;
+       
+    }
+    #spaceDiv {
+        height: 100px;
+    }
+}
+
+@media(max-width:600px){
+    #spaceDiv{height: 100px;}
+
+    .optionsImg{width: 70px;}
+    #fishFry{width: 60px;}
+
+    .child-img {width: 30%;
+    height: 70%;}
+
+#finalOne{font-size: 10px;}
+#finaltwo{font-size: 10px;}
+#iconfooter{font-size: 10px;}
+#iconDesigner{font-size: 15px;}
+.circle{width: none;
+    height: none;
+    border-radius: none;
+    background-color: transparent;}
+    #finalEmail {width: 200px;}
+    #lastSite{
+        font-size: 15px;
+    }
+}
+
+@media(max-width:480px){
+    #spaceDiv{height: 100px;}
+    #articleHead{font-size: 20px;}
+    #A{font-size: 30px;}
+    #articleImg{width: 200px;}
+    .child-img{width: 50%;
+        height: 40%;
+    }
+    .icon{font-size: 10px;}
+    #finalEmail {
+        width: 150px;
+    }
+    #lastSite{
+        font-size: 10px;
+    }
+
+    #footerabout{font-size: 18px;}
+}
+
+@media(max-width:430px){
+
+    #finalOne{font-size: 7px;}
+    #finaltwo{font-size: 7px;}
+    #mobile{width: 60%;
+
+        height: 390px;
+      }
+
+      .icon{font-size: 6px;}
+      #minimobileSerach{width: 150px;}
+      #spaceDiv{height: 100px;}
+
+      #footer{font-size: 13px;}
+      .underline{font-size: 8px;
+    font-weight: bold;}
+
+}
+
+@media(max-width:390px){
+    #mobile{width: 60%;
+        height: 390px;
+      }
+      #minimobileSerach{width: 150px;}
+      #spaceDiv{height: 100px;}
+
+      #footer{font-size: 13px;}
+      .underline{font-size: 8px;
+    font-weight: bold;}
+
+    #finalEmail{width: 100px;
+    }
+    #spaceDiv{height: 100px;}
+    #lastSite{font-size: 10px;}
+    #fishFry {width: 50px;}
+    .optionsImg{width: 60px;}
+    #finalOne{font-size: 7px;}
+    #finalOne{font-size: 7px;}
+    #footerabout{font-size: 15px;}
+}
+
+@media(max-width:315px){
+
+    #articleImg{width: 150px;}
+    #articleHead{font-size: 15px;}
+    #javaheader{font-size: 20px;}
+}

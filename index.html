@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Acme&family=Alfa+Slab+One&family=Anton&family=Domine&family=Russo+One&family=Squada+One&family=Staatliches&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+</head>
+
+<body>
+  <nav id="mainHeader" class="navbar navbar-expand-lg container">
+    <div class="container-fluid">
+      <img id="navImage" src="depositphotos_25266277-stock-illustration-chief-cook-removebg-preview.png" alt="">
+      <a class="navbar-brand" href="#"><span style="color: orange; font-size: 30px;"> Get</span>- <span
+          style="font-size:30px;">Recipes</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">About</a>
+          </li>
+        </ul>
+
+
+        <form class="d-flex" role="search">
+          <input id="searchRecipe" class="form-control me-2  " style="border-radius: 30px;" type="search"
+            placeholder="Search your Recipes" aria-label="Search">
+          <button onclick="search()" style="border-radius: 30px;" class="btn btn-outline-warning"
+            type="button">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <div class="container" id="meaasage"></div>
+  <div class="container" id="output"></div>
+
+  <article class="container">
+    <div>
+      <h3 id="articleHead" style=" font-family: 'Anton', sans-serif;;"> <span id="A"
+          style="color: orange; ">A</span> recipe has no soul,<br> you as the cook must <br> bring soul
+        to the recipe</h3>
+    </div>
+    <div>
+
+      <img id="articleImg" src="1000x1000-removebg-preview.png" alt="">
+    </div>
+  </article>
+
+
+
+
+
+
+
+
+
+  </div>
+  <section>
+
+    <div>
+      <h1 style="text-align: center; font-family: 'Squada One', cursive;">FAMOUS FOODS</h1>
+      <P style="text-align: center;font-family: 'Squada One', cursive;">WE provide varities of foods and beverages
+        recipes</P>
+    </div>
+    <br>
+
+    <div id="optionalImg" class="container">
+      <img id="fishFry" style="cursor: pointer; " src="KFF-FI1-Compressed-removebg-preview.png" alt=""
+        class="optionsImg">
+
+      <img style="cursor: pointer;" src="is-broasted-chicken-healthy-removebg-preview.png" alt="" class="optionsImg">
+
+
+      <img src="maxresdefault-removebg-preview.png" alt="" class="optionsImg">
+      <img style="cursor: pointer;" src="Burgers-Mumbai-Delivery-removebg-preview.png" alt="" class="optionsImg">
+      <img style="cursor: pointer;" src="Best-Mutton-Biryani-Recipe-removebg-preview.png" alt="" class="optionsImg">
+
+    </div>
+
+  </section>
+
+  <br>
+
+  <section id="section2" class="container">
+
+    <div id="bgORANGE"><img id="imageINSIDE"  style="overflow: hidden;"
+        src="chef-making-ok-gesture-tasteful-food-isolated-white-background-40366703-transformed-removebg-preview.png"
+        alt=""></div>
+
+    <div >
+      <h1 style="font-family:'Squada One', cursive;">Variety of food and beverage <br> recipes</h1>
+      <p style="font-family:'Squada One', cursive;">Need a recipe? Get dinner on the table <br> with Food Network's best
+        recipes, videos, cooking <br> tips and
+        meal ideas from top chefs</p>
+      
+      <a href="#searchRecipe"><button id="menuButton1">GET</button></a>
+    </div>
+  </section>
+
+<br>
+<br>
+  <div class="container" id="popular-menu">
+    <h4 style="font-weight: bold; cursor: pointer;">popular menu</h4>
+  </div>
+  <div class="main-scroll-div container">
+
+    <div>
+      <button class="icon" onclick="scrolll()"><i class="fa-sharp fa-solid fa-backward fa-beat fa-2xl"></i>
+      </button>
+
+    </div>
+    <div class="cover">
+      <div class="scroll-images">
+        <div onclick="kabab()" class="child">
+          <div style="padding-left: 10px;">
+            <h1 id="mainheadscroll"  style=" font-family: 'Squada One', cursive;">KABAB</h1>
+            <p style="font-weight: bold;">dish of Middle Eastern or Central Asian origin that typically combines small
+              pieces of meat such as lamb or beef with vegetables on a skewer and is then grilled</p>
+          </div>
+          <img class="child-img" src="Turkish-Kebabs-min-removebg-preview.png" alt="">
+        </div>
+        <div onclick="randang()" class="child">
+          <div style="padding-left: 10px;">
+            <h1 id="mainheadscroll"  style=" font-family: 'Squada One', cursive;">BEEF RANDANG</h1>
+            <P style="font-weight: bold;">Beef rendang is Indonesian beef curry cooked in spiced coconut milk until all
+              the liquid evaporates leaving the meat tasting rich and delicious.</P>
+          </div>
+          <img class="child-img" src="images-removebg-preview.png" alt="">
+        </div>
+        <div onclick="muttanbiriyani()" class="child">
+          <div style="padding-left: 10px;">
+            <h1 id="mainheadscroll" style=" font-family: 'Squada One', cursive;">Mutton-Biryani</h1>
+            <p style="font-weight: bold;">royal dish with beautifully spiced and fragrant layers of biryani rice
+              centered with juicy, tender mutton (goat meat or lamb)</p>
+          </div>
+          <img class="child-img" src="Best-Mutton-Biryani-Recipe-removebg-preview.png" alt="">
+        </div>
+
+
+      </div>
+    </div>
+    <div>
+      <button onclick="scrollr()" class="icon"> <i class="fa-solid fa-forward fa-beat fa-2xl"></i></button>
+    </div>
+  </div>
+
+  <div class="container" id="popularMenu"></div>
+
+  <br>
+  <br>
+  <section id="section3" class="container">
+    <div id="background2">
+      <div id="mobile">
+        <img id="navImage-micro" src="depositphotos_25266277-stock-illustration-chief-cook-removebg-preview.png" alt="">
+        <a class="navbar-brand" href="#"><span style="color: orange; font-size: 20px ; font-weight: bold;"> Get</span>-
+          <span style="font-size:20px; font-weight: bold;">Recipes</span></a>
+        <br>
+        <br>
+        <input id="minimobileSerach" style="border-radius: 50px; " type="text"> <br>
+        <br><button style="border-radius: 50px; background-color: orange;">search</button>
+        <br>
+        <br>
+        <div class="articleMobile" class="container">
+          <div>
+            <h6 style="font-size: 20px; font-family: 'Anton', sans-serif;;"> <span
+                style="color: orange; font-size: 20px;">A</span> recipe has no soul,<br> you as the cook must <br> bring
+              soul
+              to the recipe</h6>
+          </div>
+          <div>
+
+            <img width="50px" src="1000x1000-removebg-preview.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="section-3Second">
+      <h1 style="font-family: 'Anton', sans-serif;">Get the App</h1>
+      <p style="font-family:'Squada One', cursive;">our App is available in playstore and App atore,
+        you can download for free
+      </p>
+      <img src="images.png" alt="">
+    </div>
+
+  </section>
+  <div id="spaceDiv" >
+
+  </div>
+
+  <footer id="footer" class="container">
+
+    <div>
+      <a class="navbar-brand" href="#"><span style="color: orange; font-size: 30px; font-family: 'Anton', sans-serif;">
+          Get</span>- <span style="font-size:30px; font-family: 'Anton', sans-serif;">Recipes</span></a>
+
+      <strong>
+        <p>Get-Recipies is an application <br> used to find a
+          variety of famous <br> food & drink recipes</p>
+      </strong>
+      <p><strong>Sign up for our weekly newsletters!</strong></p> <input id="finalEmail" placeholder="Enter your email"
+        type="email"> <button onclick="setEmail()" class="bg-warning"><strong>Submit</strong></button>
+
+    </div>
+    <div>
+      <a class="navbar-brand" href="#"><span style="color: orange; font-size: 30px; font-family: 'Anton', sans-serif;">
+          Join</span>- <span style="color: orange; font-size:30px; font-family: 'Anton', sans-serif;">Now</span></a>
+      <a class="underline" href="about.html">
+        <h5 id="footerabout">About us</h5>
+      </a>
+      <a class="underline" href="terms.html">
+        <h5 id="footerabout">Terms of Use</h5>
+      </a>
+      <a class="underline" href="editorial.html">
+        <h5 id="footerabout">Editorial Guidelines</h5>
+      </a>
+      <a class="underline" href="contact.html">
+        <h5 id="footerabout">Contact</h5>
+      </a>
+    </div>
+
+
+  </footer>
+<br>
+  <div class="final-footer bg-dark">
+
+<br>
+    <div  class="container text-light">
+      <table id="finalOne" style="width:100%">
+        <thead>
+          <tr>
+            <th>Dotdash Meredith New York</th>
+            <th>Dotdash Meredith Des Moines</th>
+            <th>Advertising Inquiries</th>
+            <th>Marketing Inquiries</th>
+          </tr>
+
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>225 Liberty St, <br> 4th Fl.
+              New York, NY 10281 <br>
+              (212) 204-4000</td>
+            <td>1716 Locust St
+              Des Moines <br>, IA 50309</td>
+            <td>advertisewith@gmail.com</td>
+            <td>partnersshow@gmail.com</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table id="finaltwo" style="width: 100%;">
+        <thead>
+          <tr>
+            <th>Dotdash Meredith Birmingham</th>
+            <th></th>
+            <th>Press Inquiries</th>
+            <th>Subscription</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>4100 Old Montgomery Hwy <br>
+              Birmingham, AL 35209</td>
+            <td> </td>
+            <td>press@mgb.com</td>
+            <td>subscribe@cmon.com</td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+
+      <div  style="width: 100%; text-align: center; color: white;">
+        <h3 id="iconfooter">SEE WHAT WE’RE UP TO</h3>
+        <a href="https://www.instagram.com/"><span class="circle"><i id="iconDesigner" style="color: white;" class="fa-brands fa-square-instagram fa-2x"></i></span> </a>
+&nbsp;  &nbsp;  &nbsp;
+<a href=""><span class="circle"><i id="iconDesigner" style="color: white;" class="fa-brands fa-linkedin-in fa-2x"></i></span></a>
+        &nbsp;  &nbsp;  &nbsp;
+        <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"> <span class="circle"><i id="iconDesigner" style="color: white;" class="fa-brands fa-twitter fa-2x"></i></span></a>
+       
+      </div>
+
+
+
+    </div>
+  </div>
+   <p id="lastSite" class="text-orange-400 max-sm:text-xs text-center" style="font-family:  'Russo One', sans-serif;"> &copy; Recipes website 2023, all rights reserved &reg; Akhiljith</p>
+
+
+
+
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+
+
+<script>
+
+
+  function scrolll() {
+    left = document.querySelector(".scroll-images");
+    left.scrollBy(-1190, 0)
+  }
+
+  function scrollr() {
+    right = document.querySelector(".scroll-images");
+    right.scrollBy(1190, 0)
+  }
+</script>
+
+
+<script>
+  async function search() {
+
+    recipeName = searchRecipe.value
+    if (recipeName) {
+      var response = await fetch('https://api.api-ninjas.com/v1/recipe?query= ' + recipeName, { headers: { 'X-API-Key': 'euWu5M+wGnnpuf5QVmuadw==7upNrdGrWoeiChFh' } }); const data = await response.json().then((res) => {
+
+
+
+        for (let recipesit of res) {
+          html = ` <div style="height: 100px;"></div>
+        <div id="input">
+       <h1 id="javaheader" style="color: coral;  font-weight: bold; font-family: 'Anton', sans-serif;">   <img id="navImage-micr" src="depositphotos_25266277-stock-illustration-chief-cook-removebg-preview.png" alt="">${recipesit.title}</h1>
+
+       <div style="height: 30px;"></div>
+       <h5 style="color:#00ff5db3;  font-weight: bold; "><span  style="font-size: 20px; font-family:'Anton', sans-serif; ">INGRIDIENTS NEEDED: </span><span style="color:#100e0ecf; font-weight: bold;font-family:'Squada One', cursive; "> <br>  <div style="height: 30px;"></div>  ${recipesit.ingredients}</span></h5>
+
+       <div style="height: 30px;"></div>
+
+       <h5 style="color:#ff1c00b8;  font-weight: bold; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;"><span style="font-size: 20px; font-family:'Anton', sans-serif; ">PREPARATION METHOD: </span><span  style="color: #100e0ecf;; font-weight: bold; font-family:'Squada One', cursive; " >  <br> <div style="height: 30px; color:black;"></div> ${recipesit.instructions}</span> </h5>
+     </div>
+     
+     <div style="height: 100px;"></div>`}
+
+
+        output.innerHTML = html
+
+      })
+    }
+    else {
+      alert("Plz Enter Food")
+    }
+  }
+</script>
+
+<script>
+  function setEmail(){
+
+    if(finalEmail.value){
+    alert("Thanks for being a part")
+    window.location="index.html"}
+    else{}
+  }
+</script>
+
+<script>
+
+  async function kabab() {
+    recipeName = "kabab"
+    var response = await fetch('https://api.api-ninjas.com/v1/recipe?query= ' + recipeName, { headers: { 'X-API-Key': 'euWu5M+wGnnpuf5QVmuadw==7upNrdGrWoeiChFh' } }); const data = await response.json().then((res) => {
+
+      displayData(res)
+
+
+    })
+  }
+
+  async function randang() {
+    recipeName = "Beef Strogonoff"
+    var response = await fetch('https://api.api-ninjas.com/v1/recipe?query= ' + recipeName, { headers: { 'X-API-Key': 'euWu5M+wGnnpuf5QVmuadw==7upNrdGrWoeiChFh' } }); const data = await response.json().then((res) => {
+
+      displayData(res)
+
+
+    })
+  }
+  async function muttanbiriyani() {
+    recipeName = "mutton biriyani"
+    var response = await fetch('https://api.api-ninjas.com/v1/recipe?query= ' + recipeName, { headers: { 'X-API-Key': 'euWu5M+wGnnpuf5QVmuadw==7upNrdGrWoeiChFh' } }); const data = await response.json().then((res) => {
+
+      displayData(res)
+
+
+    })
+  }
+
+
+  function displayData(res) {
+    for (let recipesit of res) {
+      html = ` <div style="height: 100px;"></div>
+        <div id="input">
+       <h1 style="color: coral;  font-weight: bold; font-family: 'Anton', sans-serif;">   <img id="navImage-micr" src="depositphotos_25266277-stock-illustration-chief-cook-removebg-preview.png" alt="">${recipesit.title}</h1>
+
+       <div style="height: 30px;"></div>
+       <h5 style="color:#00ff5db3;  font-weight: bold; "><span  style="font-size: 20px; font-family:'Anton', sans-serif; ">INGRIDIENTS NEEDED: </span><span style="color:#100e0ecf; font-weight: bold;font-family:'Squada One', cursive; "> <br>  <div style="height: 30px;"></div>  ${recipesit.ingredients}</span></h5>
+
+       <div style="height: 30px;"></div>
+
+       <h5 style="color:#ff1c00b8;  font-weight: bold; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;"><span style="font-size: 20px; font-family:'Anton', sans-serif; ">PREPARATION METHOD: </span><span  style="color: #100e0ecf;; font-weight: bold; font-family:'Squada One', cursive; " >  <br> <div style="height: 30px; color:black;"></div> ${recipesit.instructions}</span> </h5>
+     </div>
+     
+     <div style="height: 100px;"></div>`}
+
+    popularMenu.innerHTML = html
+
+
+  }
+
+
+</script>
+
+
+
+
+
+</html>
